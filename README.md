@@ -1,3 +1,5 @@
+# Solution
+
 ### `Single List component`
 The Single List Component is a functional React component that renders a single item in a list. It takes in props including the item's index, whether or not it is currently selected, a function to handle click events, and the text content of the item. The component renders a `<li>` element with a background color of green if it is selected and red if it is not, and it calls the click event handler function passed in via props when it is clicked.
 
