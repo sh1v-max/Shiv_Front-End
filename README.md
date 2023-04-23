@@ -12,6 +12,8 @@ Line 31:6:  React Hook useEffect has a missing dependency: `setSelectedIndex`. i
 
 In `SingleListItem` component, the `isSelected` prop type should be `PropTypes.bool.isRequired` instead of `PropTypes.bool`. This is because the prop is required and its value should always be a boolean.
 
+Error:
+
 there is an error in Line 54 under `WrappedListComponent.propTypes` it shoud be corrected as `PropTypes.shape` instead of `PropTypes.shapeOf` as property `shapeOf` does not exist in type `propType`
 
 ### `Fixeed code`
