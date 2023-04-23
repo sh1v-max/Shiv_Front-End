@@ -58,7 +58,10 @@ WrappedListComponent.propTypes = {
 };
 
 WrappedListComponent.defaultProps = {
-  items: null,
+  items: [{text: "Shiv shankar singh"}, 
+  {text: "12018635"}, 
+  {text: "B.Tech CSE"}, 
+  {text: "Frontend Assignment"}],
 };
 
 const List = memo(WrappedListComponent);
