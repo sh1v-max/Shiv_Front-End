@@ -18,6 +18,6 @@ there is an error in Line 54 under `WrappedListComponent.propTypes` it shoud be 
 
 ### `Fixeed code`
 
-Fixed code can be found in `index.js` file and the original one is saved in `problem.js` file.
+Fixed code can be found in `index.js` file and the original one is saved in `problem.js` file in `src` folder.
 
 
