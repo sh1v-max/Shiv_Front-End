@@ -6,7 +6,7 @@ const WrappedSingleListItem = ({ index, isSelected, onClickHandler, text }) => {
   return (
     <li
       style={{ backgroundColor: isSelected ? "green" : "red" }}
-      onClick={onClickHandler(index)}
+      onClick={() => onClickHandler(index)}
     >
       {text}
     </li>
@@ -15,7 +15,7 @@ const WrappedSingleListItem = ({ index, isSelected, onClickHandler, text }) => {
 
 WrappedSingleListItem.propTypes = {
   index: PropTypes.number,
-  isSelected: PropTypes.bool.isRequired,
+  isSelected: PropTypes.bool,
   onClickHandler: PropTypes.func.isRequired,
   text: PropTypes.string.isRequired,
 };
@@ -24,7 +24,7 @@ const SingleListItem = memo(WrappedSingleListItem);
 
 // List Component
 const WrappedListComponent = ({ items }) => {
-  const [selectedIndex, setSelectedIndex] = useState(null);
+  const [selectedIndex, setSelectedIndex] = useState();
 
   useEffect(() => {
     setSelectedIndex(null);
@@ -36,15 +36,19 @@ const WrappedListComponent = ({ items }) => {
 
   return (
     <ul style={{ textAlign: "left" }}>
-      {items.map((item, index) => (
-        <SingleListItem
-          key={index}
-          onClickHandler={() => handleClick(index)}
-          text={item.text}
-          index={index}
-          isSelected={index === selectedIndex}
-        />
-      ))}
+      {items ? (
+        items.map((item, index) => (
+          <SingleListItem
+            key={index}
+            onClickHandler={() => handleClick(index)}
+            text={item.text}
+            index={index}
+            isSelected={selectedIndex === index}
+          />
+        ))
+      ) : (
+        <div>Loading...</div>
+      )}
     </ul>
   );
 };
@@ -59,10 +63,10 @@ WrappedListComponent.propTypes = {
 
 WrappedListComponent.defaultProps = {
   items: [
-    { text: "Shiv shankar singh" },
-    { text: "12018635" },
-    { text: "B.Tech CSE" },
-    { text: "Frontend Assignment" },
+    { text: "BMW" },
+    { text: "Audi is red" },
+    { text: "Thank You Mercedes" },
+    { text: "There you go Porsche" },
   ],
 };
 
