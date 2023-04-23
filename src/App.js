@@ -47,7 +47,7 @@ const WrappedListComponent = ({ items }) => {
           />
         ))
       ) : (
-        <div>Loading...</div>
+        <div>Welcome</div>
       )}
     </ul>
   );
