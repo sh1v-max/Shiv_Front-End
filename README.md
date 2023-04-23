@@ -20,13 +20,6 @@ there is an error in Line 54 under `WrappedListComponent.propTypes` it shoud be 
 
 ### `Fixed code`
 
-<<<<<<< HEAD
-Fixed code can be found in `index.js` file and the original one is saved in `problem.js` file in `src` folder.
+Fixed code can be found in `App.js` file in `src` folder.
 
 
-=======
-Fixed code can be found in `App.js` file.
-
-
-
->>>>>>> b60bb03aed23bf1a8481a90b5299db02989fb349
