@@ -1,25 +1,70 @@
-# Solution
+# Getting Started with Create React App
 
-### `Single List component`
-The Single List Component is a functional React component that renders a single item in a list. It takes in props including the item's index, whether or not it is currently selected, a function to handle click events, and the text content of the item. The component renders a `<li>` element with a background color of green if it is selected and red if it is not, and it calls the click event handler function passed in via props when it is clicked.
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-This component is often used as a child component within a larger list component where it can be reused multiple times to render each item in the list. By making this component reusable and encapsulating the logic for rendering and handling click events within it, we can create more modular and maintainable code.
+## Available Scripts
 
-### `Warning and Errors in code`
-There is a warning and an error found in code.
+In the project directory, you can run:
 
-Warning: 
+### `npm start`
 
-Line 31:6:  React Hook useEffect has a missing dependency: `setSelectedIndex`. in variable `selectedIndex` under `WrappedListComponent` it must be `useState(null)` instead of `useState()`
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
 
-In `SingleListItem` component, the `isSelected` prop type should be `PropTypes.bool.isRequired` instead of `PropTypes.bool`. This is because the prop is required and its value should always be a boolean.
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
 
-Error:
+### `npm test`
 
-there is an error in Line 54 under `WrappedListComponent.propTypes` it shoud be corrected as `PropTypes.shape` instead of `PropTypes.shapeOf` as property `shapeOf` does not exist in type `propType`
+Launches the test runner in the interactive watch mode.\
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `Fixed code`
+### `npm run build`
 
-Fixed code can be found in `index.js` file and the original one is saved in `problem.js` file in `src` folder.
+Builds the app for production to the `build` folder.\
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
+The build is minified and the filenames include the hashes.\
+Your app is ready to be deployed!
 
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+
+### `npm run eject`
+
+**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+
+If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+
+Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+
+You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+
+## Learn More
+
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+
+To learn React, check out the [React documentation](https://reactjs.org/).
+
+### Code Splitting
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+
+### Analyzing the Bundle Size
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+
+### Making a Progressive Web App
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+
+### Advanced Configuration
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+
+### Deployment
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+
+### `npm run build` fails to minify
+
+This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
