@@ -6,7 +6,7 @@ The Single List Component is a functional React component that renders a single 
 This component is often used as a child component within a larger list component where it can be reused multiple times to render each item in the list. By making this component reusable and encapsulating the logic for rendering and handling click events within it, we can create more modular and maintainable code.
 
 ### `Warning and Errors in code`
-There is a warnind and an error found in code.
+There is a warning and an error found in code.
 
 Warning: 
 
@@ -18,7 +18,7 @@ Error:
 
 there is an error in Line 54 under `WrappedListComponent.propTypes` it shoud be corrected as `PropTypes.shape` instead of `PropTypes.shapeOf` as property `shapeOf` does not exist in type `propType`
 
-### `Fixeed code`
+### `Fixed code`
 
 Fixed code can be found in `index.js` file and the original one is saved in `problem.js` file in `src` folder.
 
